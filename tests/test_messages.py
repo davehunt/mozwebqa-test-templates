@@ -22,7 +22,6 @@ class TestMessages:
         Assert.equal(messages_page.messages[0].text, 'HTML allowed here')
 
     @pytest.mark.nondestructive
-    @pytest.mark.xfail(reason='test_create_message leaves message in list')
     def test_empty(self, mozwebqa):
         """Start with an empty list of messages"""
         messages_page = MessagesPage(mozwebqa)
