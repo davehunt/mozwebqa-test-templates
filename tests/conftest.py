@@ -6,7 +6,7 @@ import pytest
 from flaskr import flaskr
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='function')
 def app(request):
     db_fd, flaskr.app.config['DATABASE'] = tempfile.mkstemp()
     flaskr.app.config['TESTING'] = True

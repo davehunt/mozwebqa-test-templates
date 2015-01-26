@@ -1,6 +1,6 @@
 Flask
 pytest
-pytest-flask
+git+https://github.com/davehunt/pytest-flask.git@fix-port#egg=pytest-flask
 pytest-mozwebqa
 pytest-xdist
 unittestzero
